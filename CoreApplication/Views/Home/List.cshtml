@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CoreApplication.Models.USERDATA>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Image</th>
+        <th>Address</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var data in Model)
+    {
+        <tr>
+            <td>@data.Id</td>
+            <td>@data.Name</td>
+            <td>@data.Email</td>
+            <td>@data.Password</td>
+            <td><img src="~/Uploaded/@data.Image" style="width:100px;" /></td>
+            <td>@data.Address</td>
+            <td>
+                <div class="d-flex gap-2">
+                    <form asp-action="Delete" asp-route-id="@data.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+
+                    <a asp-action="Edit" asp-route-id="@data.Id" class="btn btn-primary btn-sm">Edit</a>
+				</div>
+            </td>
+        </tr>
+    }
+</table>
