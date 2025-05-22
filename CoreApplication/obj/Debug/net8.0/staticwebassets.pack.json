@@ -5,8 +5,12 @@
       "PackagePath": "staticwebassets\\CoreApplication.alyoako2sn.bundle.scp.css"
     },
     {
-      "Id": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\qr_code.png",
-      "PackagePath": "staticwebassets\\Uploaded\\qr_code.png"
+      "Id": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\Gallery1.webp",
+      "PackagePath": "staticwebassets\\Uploaded\\Gallery1.webp"
+    },
+    {
+      "Id": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\ba-seo.png",
+      "PackagePath": "staticwebassets\\Uploaded\\ba-seo.png"
     },
     {
       "Id": "D:\\CoreApplication\\CoreApplication\\wwwroot\\css\\site.css",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "em1TIaASEI8uJ2pwDZ6dAcSBQkmA36QiTR2z3fZVr+U=",
+  "Hash": "GptfCjhChULGFGuPq+zc4eIDbV2tp90H4vQsCPHE4Fs=",
   "Source": "CoreApplication",
   "BasePath": "_content/CoreApplication",
   "Mode": "Default",
@@ -1319,12 +1319,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\qr_code.png",
+      "Identity": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\ba-seo.png",
       "SourceId": "CoreApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\CoreApplication\\CoreApplication\\wwwroot\\",
       "BasePath": "_content/CoreApplication",
-      "RelativePath": "Uploaded/qr_code#[.{fingerprint}]?.png",
+      "RelativePath": "Uploaded/ba-seo#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1333,11 +1333,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "m18cv8h768",
-      "Integrity": "Rt39O/drg3aueInDgDZZ/O5lYusbR69ymS/TsLClrvY=",
+      "Fingerprint": "8zrzscvbmx",
+      "Integrity": "ZHQw50GE2ZkCdgmOaPMVALOxKV2p3fNEL/+shTHRE6Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploaded\\qr_code.png"
+      "OriginalItemSpec": "wwwroot\\Uploaded\\ba-seo.png"
+    },
+    {
+      "Identity": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\Gallery1.webp",
+      "SourceId": "CoreApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CoreApplication\\CoreApplication\\wwwroot\\",
+      "BasePath": "_content/CoreApplication",
+      "RelativePath": "Uploaded/Gallery1#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7shszqld66",
+      "Integrity": "B4RdWIpMfLAKpolmJ5j4fRpDqcswrelEEv5XYc0M7j8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploaded\\Gallery1.webp"
     }
   ],
   "Endpoints": [
@@ -1364,7 +1385,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 04:33:22 GMT"
+          "Value": "Thu, 22 May 2025 11:45:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1409,7 +1430,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 04:33:22 GMT"
+          "Value": "Thu, 22 May 2025 11:45:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1454,7 +1475,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 04:33:22 GMT"
+          "Value": "Thu, 22 May 2025 11:45:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1491,7 +1512,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 04:33:22 GMT"
+          "Value": "Thu, 22 May 2025 11:45:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6426,8 +6447,8 @@
       ]
     },
     {
-      "Route": "Uploaded/qr_code.m18cv8h768.png",
-      "AssetFile": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\qr_code.png",
+      "Route": "Uploaded/ba-seo.8zrzscvbmx.png",
+      "AssetFile": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\ba-seo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6436,7 +6457,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1895"
+          "Value": "2994887"
         },
         {
           "Name": "Content-Type",
@@ -6444,11 +6465,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Rt39O/drg3aueInDgDZZ/O5lYusbR69ymS/TsLClrvY=\""
+          "Value": "\"ZHQw50GE2ZkCdgmOaPMVALOxKV2p3fNEL/+shTHRE6Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 09:43:22 GMT"
+          "Value": "Thu, 22 May 2025 12:11:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6458,21 +6479,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m18cv8h768"
+          "Value": "8zrzscvbmx"
         },
         {
           "Name": "label",
-          "Value": "Uploaded/qr_code.png"
+          "Value": "Uploaded/ba-seo.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Rt39O/drg3aueInDgDZZ/O5lYusbR69ymS/TsLClrvY="
+          "Value": "sha256-ZHQw50GE2ZkCdgmOaPMVALOxKV2p3fNEL/+shTHRE6Y="
         }
       ]
     },
     {
-      "Route": "Uploaded/qr_code.png",
-      "AssetFile": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\qr_code.png",
+      "Route": "Uploaded/ba-seo.png",
+      "AssetFile": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\ba-seo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6481,7 +6502,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1895"
+          "Value": "2994887"
         },
         {
           "Name": "Content-Type",
@@ -6489,11 +6510,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Rt39O/drg3aueInDgDZZ/O5lYusbR69ymS/TsLClrvY=\""
+          "Value": "\"ZHQw50GE2ZkCdgmOaPMVALOxKV2p3fNEL/+shTHRE6Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 09:43:22 GMT"
+          "Value": "Thu, 22 May 2025 12:11:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6503,7 +6524,89 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Rt39O/drg3aueInDgDZZ/O5lYusbR69ymS/TsLClrvY="
+          "Value": "sha256-ZHQw50GE2ZkCdgmOaPMVALOxKV2p3fNEL/+shTHRE6Y="
+        }
+      ]
+    },
+    {
+      "Route": "Uploaded/Gallery1.7shszqld66.webp",
+      "AssetFile": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\Gallery1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B4RdWIpMfLAKpolmJ5j4fRpDqcswrelEEv5XYc0M7j8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 11:46:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7shszqld66"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploaded/Gallery1.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B4RdWIpMfLAKpolmJ5j4fRpDqcswrelEEv5XYc0M7j8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploaded/Gallery1.webp",
+      "AssetFile": "D:\\CoreApplication\\CoreApplication\\wwwroot\\Uploaded\\Gallery1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B4RdWIpMfLAKpolmJ5j4fRpDqcswrelEEv5XYc0M7j8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 11:46:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B4RdWIpMfLAKpolmJ5j4fRpDqcswrelEEv5XYc0M7j8="
         }
       ]
     }

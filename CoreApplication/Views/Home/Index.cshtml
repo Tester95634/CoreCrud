@@ -1,29 +1,39 @@
-﻿@model CoreApplication.Models.USERDATA
+﻿@model CoreApplication.Models.CombineViewModal
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="container-fluid">
     <form asp-action="Save_user" method="post" enctype="multipart/form-data">
-    <div class="mb-3">
-        <label for="formFile" class="form-label">Name</label>
-        <input class="form-control" type="text" asp-for="Name" id="formFile">
-    </div>
-    <div class="mb-3">
-        <label for="formFileMultiple" class="form-label">Email</label>
-        <input class="form-control" type="email" asp-for="Email" id="formFileMultiple" multiple>
-    </div>
-    <div class="mb-3">
-        <label for="formFileDisabled" class="form-label">Password</label>
-        <input class="form-control" type="password" asp-for="Password" >
-    </div>
-    <div class="mb-3">
-        <label for="formFileSm" class="form-label">File</label>
-        <input class="form-control form-control-sm" name="Image" id="formFileSm" type="file">
-    </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Name</label>
+            <input class="form-control" type="text" name="Name" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Email</label>
+            <input class="form-control" type="email" name="Email" id="formFileMultiple" multiple>
+        </div>
+        <div class="mb-3">
+            <label for="formFileDisabled" class="form-label">Password</label>
+            <input class="form-control" type="password" name="Password" >
+        </div>
+        <div class="mb-3">
+            <label for="formFileSm" class="form-label">File</label>
+            <input class="form-control form-control-sm" name="Image" id="formFileSm" type="file">
+        </div>
+        <div class="mb-3">
+            <label for="formFileSm" class="form-label">Gender</label>
+            <select class="form-control form-control-sm" name="GenderId">
+                <option>Select Gender</option>
+                @foreach (var data in Model.tbl_Gender)
+                {
+                   <option value="@data.Id">@data.Gender</option> 
+                }
+            </select>
+        </div>
     <div>
         <label for="formFileLg" class="form-label">Address</label>
-        <textarea class="form-control" asp-for="Address" id="formFileLg" type="text"></textarea>
+        <textarea class="form-control" name="Address" id="formFileLg" type="text"></textarea>
     </div>
     <input type="submit" value="submit" />
     </form>

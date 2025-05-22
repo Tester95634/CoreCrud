@@ -4,7 +4,10 @@
 *@
 @{
 }
-
+<form asp-action="Logout" method="post">
+    <button class="btn btn-primary">Logout</button>
+</form>
+<br />
 <table class="table table-bordered">
     <tr>
         <th>Id</th>
@@ -36,3 +39,6 @@
         </tr>
     }
 </table>
+
+<p>Name : @ViewBag.Name</p>
+<p>Email : @ViewBag.Email</p>

@@ -151,6 +151,7 @@ D:\CoreApplication\CoreApplication\obj\Debug\net8.0\CoreApplication.csproj.CoreC
 D:\CoreApplication\CoreApplication\obj\Debug\net8.0\CoreApplication.MvcApplicationPartsAssemblyInfo.cache
 D:\CoreApplication\CoreApplication\obj\Debug\net8.0\CoreApplication.RazorAssemblyInfo.cache
 D:\CoreApplication\CoreApplication\obj\Debug\net8.0\CoreApplication.RazorAssemblyInfo.cs
+D:\CoreApplication\CoreApplication\obj\Debug\net8.0\CoreApplication.sourcelink.json
 D:\CoreApplication\CoreApplication\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\CoreApplication\CoreApplication\obj\Debug\net8.0\scopedcss\bundle\CoreApplication.styles.css
 D:\CoreApplication\CoreApplication\obj\Debug\net8.0\scopedcss\projectbundle\CoreApplication.bundle.scp.css

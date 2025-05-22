@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using CoreApplication.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -18,8 +19,14 @@ namespace CoreApplication.Controllers
         }
         public IActionResult Index()
         {
+            var alllist=_Context.tbl_Gender.ToList();
 
-            return View();
+            var all_data = new CombineViewModal
+            {
+                tbl_Gender = alllist,
+            };
+
+            return View(all_data);
         }
 
         [HttpPost]
@@ -31,7 +38,9 @@ namespace CoreApplication.Controllers
             var streafile = new FileStream(combinfolder, FileMode.Create);
             await Image.CopyToAsync(streafile);
             data.Image = filename;
-          
+
+           
+
             _Context.userdata.Add(data);
             await _Context.SaveChangesAsync();
             return RedirectToAction("Index");
@@ -41,12 +50,36 @@ namespace CoreApplication.Controllers
         [HttpGet]
         public IActionResult List()
         {
-            var data=_Context.userdata.ToList();
+            if (HttpContext.Session.GetInt32("Id") == null)
+            {
+                return RedirectToAction("Login", "Home");
+            }
+
+            var data = _Context.userdata.ToList();
+
+            var Name = HttpContext.Session.GetString("Name");
+            var Email = HttpContext.Session.GetString("Email");
+
+            ViewBag.Name = Name;
+            ViewBag.Email=Email;
+
             return View(data);
         }
 
         public IActionResult Delete(int Id)
         {
+            var filename = _Context.userdata.FirstOrDefault(x=>x.Id==Id);
+
+            string folderpath = Path.Combine(_Environment.WebRootPath, "Uploaded",filename.Image);
+
+            if(folderpath != null)
+            {
+                if (System.IO.File.Exists(folderpath))
+                {
+                    System.IO.File.Delete(folderpath);
+                }
+            }
+
             var data = _Context.userdata.Find(Id);
             _Context.userdata.Remove(data);
             _Context.SaveChanges();
@@ -90,6 +123,48 @@ namespace CoreApplication.Controllers
             await _Context.SaveChangesAsync();
 
             return RedirectToAction("List");
+        }
+
+
+        public  IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Login(string Email,string Password)
+         {
+            try
+            {
+                var data = _Context.userdata.First(x => x.Email == Email && x.Password == Password);
+                if (data != null)
+                {
+                    HttpContext.Session.SetInt32("Id", data.Id);
+                    HttpContext.Session.SetString("Email", data.Email);
+                    HttpContext.Session.SetString("Name", data.Name);
+                    HttpContext.Session.SetString("Password", data.Password);
+                    HttpContext.Session.SetString("Address", data.Address);
+
+
+
+
+                    return RedirectToAction("List");
+                }
+            }
+            catch(Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+            }
+            return View();
+        }
+
+        public IActionResult Logout()
+        {
+            if (HttpContext.Session.GetInt32("Id") != null)
+            {
+                HttpContext.Session.Clear();
+                return RedirectToAction("Login", "Home");
+            }
+            return View();
         }
 
     }

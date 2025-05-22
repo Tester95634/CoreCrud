@@ -9,8 +9,18 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(
 
     option => 
+    
     option.UseSqlServer(builder.Configuration.GetConnectionString("connect"))
 
+    );
+
+builder.Services.AddSession(
+
+    option =>
+    {
+        option.IdleTimeout= TimeSpan.FromMinutes(1);
+    }
+    
     );
 
 var app = builder.Build();
@@ -28,6 +38,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession();
 app.UseAuthorization();
 
 app.MapControllerRoute(

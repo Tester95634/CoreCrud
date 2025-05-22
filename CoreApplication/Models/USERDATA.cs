@@ -14,7 +14,10 @@ namespace CoreApplication.Models
         public string Password { get; set; }
         [Required]
         public string Image { get; set; }
+        [Required] 
+        public int GenderId { get; set; }
         [Required]
         public string Address { get; set; }
+
     }
 }
